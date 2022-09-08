@@ -1,0 +1,24 @@
+{
+  "name": "internshiptesttask2022",
+  "version": "1.0.0",
+  "description": "Andrew's solution for the test task.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified yet\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewgrow/InternshipTestTask2022.git"
+  },
+  "keywords": [
+    "test",
+    "internship",
+    "onixsystems"
+  ],
+  "author": "Andrew G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewgrow/InternshipTestTask2022/issues"
+  },
+  "homepage": "https://github.com/andrewgrow/InternshipTestTask2022#readme"
+}
