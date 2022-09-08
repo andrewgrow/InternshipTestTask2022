@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/andrewgrow/InternshipTestTask2022/issues"
   },
-  "homepage": "https://github.com/andrewgrow/InternshipTestTask2022#readme"
+  "homepage": "https://github.com/andrewgrow/InternshipTestTask2022#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
