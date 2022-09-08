@@ -4,6 +4,7 @@
   "description": "Andrew's solution for the test task.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified yet\" && exit 1"
   },
   "repository": {
