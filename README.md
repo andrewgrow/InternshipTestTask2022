@@ -41,3 +41,6 @@ OR Run this application via Docker
 - 2.2.3 Start the container `docker run --rm -p 3000:3000 -it onix/internship2022`
 - 2.2.4 Open your browser and type `http://localhost:3000/rates`
 - 2.2.5 For stopping type CTRL+C on the terminal window
+
+### Double check to make sure that you are using Node 18.8.0 and then run the commands to start the backend server.
+### Fetch is new feature for NodeJS and cannot work before.
