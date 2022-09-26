@@ -31,7 +31,7 @@ http://localhost:3000/rates?currency=ethereum
 
 # Part 2. Running of the application:
 - 2.1.1 Install [NodeJS 18.8.0](https://nodejs.org/en/download/current/)
-- 2.1.2 Open a folder with this project, run a terminal command `npm install & node app.js`
+- 2.1.2 Open a folder with this project, run a terminal command `npm start`
 - 2.1.3 Open your browser and type `http://localhost:3000/rates`
 - 2.1.4 For stopping type CTRL+C on the terminal window
 
