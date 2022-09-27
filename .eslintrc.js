@@ -1,25 +1,16 @@
 module.exports = {
     env: {
         node: true,
-        es2021: true
+        es2021: true,
     },
-    extends: [
-        'standard-with-typescript',
-        "prettier"
-    ],
-    overrides: [
-
-    ],
-    ignorePatterns: [
-        'built/**/*.ts', 'built/**/*.js'
-    ],
-    plugins: [
-        "prettier"
-    ],
+    extends: ['standard-with-typescript', 'prettier'],
+    overrides: [],
+    ignorePatterns: ['built/**/*.ts', 'built/**/*.js'],
+    plugins: ['prettier'],
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
-        project: './tsconfig.json'
+        project: './tsconfig.json',
     },
     rules: {
         '@typescript-eslint/semi': ['error', 'always'],
@@ -30,6 +21,7 @@ module.exports = {
         'no-var': 'error',
         'no-unused-expressions': 'error',
         'require-await': 'error',
-        camelcase: 'error'
-    }
+        camelcase: 'error',
+        'prettier/prettier': ['error'],
+    },
 };
