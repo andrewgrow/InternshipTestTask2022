@@ -4,7 +4,8 @@ module.exports = {
         es2021: true
     },
     extends: [
-        'standard-with-typescript'
+        'standard-with-typescript',
+        "prettier"
     ],
     overrides: [
 
@@ -12,7 +13,9 @@ module.exports = {
     ignorePatterns: [
         'built/**/*.ts', 'built/**/*.js'
     ],
-    plugins: [],
+    plugins: [
+        "prettier"
+    ],
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
