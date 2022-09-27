@@ -1,4 +1,4 @@
-import * as express from "express";
+import * as express from 'express';
 import { RatesController } from '../controllers/rates';
 
 const ratesController = new RatesController();
