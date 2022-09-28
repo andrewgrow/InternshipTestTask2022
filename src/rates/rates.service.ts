@@ -1,8 +1,14 @@
-import { Request, Response } from 'express';
+import { Injectable } from '@nestjs/common';
+import { Response } from 'express';
+import { Rate } from './rate.interface';
 
-export class RatesController {
-    getRate = async function (req: Request, res: Response): Promise<void> {
-        return await Promise.resolve(req.query.currency)
+/**
+ * The Rates service provide processing of rates data.
+ */
+@Injectable()
+export class RatesService {
+    async getRate(currency: string): Promise<Rate> {
+        return await Promise.resolve(currency)
             .then((currency?: string) => {
                 if (
                     currency === null ||
@@ -26,15 +32,12 @@ export class RatesController {
                 }
             })
             .then((value: Response) => {
-                const result = value.data.rateUsd;
+                const result: number = value.data.rateUsd;
                 if (result !== null && result !== undefined) {
-                    return res.status(200).json({ usd: result });
+                    return { usd: result };
                 } else {
                     throw new Error('Remote rate not found.');
                 }
-            })
-            .catch(() => {
-                return res.status(404).send('Not found.');
             });
-    };
+    }
 }

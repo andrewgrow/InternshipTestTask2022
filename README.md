@@ -42,5 +42,8 @@ OR Run this application via Docker
 - 2.2.4 Open your browser and type `http://localhost:3000/rates`
 - 2.2.5 For stopping type CTRL+C on the terminal window
 
+### Additional commands:
+- Run ESLint `npm run eslint`
+
 ### Double check to make sure that you are using Node 18.8.0 and then run the commands to start the backend server.
 ### Fetch is new feature for NodeJS and cannot work before.
